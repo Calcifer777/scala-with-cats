@@ -1,4 +1,0 @@
-[debug] [myproject] Classpath dependencies List()
-[debug] [myproject] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'myproject' to '/home/marco/git/marco/scala-with-cats/.bloop/myproject.json'
-[success] Generated .bloop/myproject.json

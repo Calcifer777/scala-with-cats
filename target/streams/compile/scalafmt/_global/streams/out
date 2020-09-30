@@ -1,8 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0mChange report:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Checked: /home/marco/git/marco/scala-with-cats/src/main/scala/Main.scala, /home/marco/git/marco/scala-with-cats/src/main/scala/chapter01/JsonSyntax.scala, /home/marco/git/marco/scala-with-cats/src/main/scala/chapter01/JsonWriter.scala, /home/marco/git/marco/scala-with-cats/src/main/scala/chapter01/JsonWriterInstances.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Modified: /home/marco/git/marco/scala-with-cats/src/main/scala/chapter01/JsonWriter.scala, /home/marco/git/marco/scala-with-cats/src/main/scala/chapter01/JsonSyntax.scala, /home/marco/git/marco/scala-with-cats/src/main/scala/chapter01/JsonWriterInstances.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Unmodified: /home/marco/git/marco/scala-with-cats/src/main/scala/Main.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Added: /home/marco/git/marco/scala-with-cats/src/main/scala/chapter01/JsonSyntax.scala, /home/marco/git/marco/scala-with-cats/src/main/scala/chapter01/JsonWriterInstances.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Removed: [0m
-[0m[[0m[0minfo[0m] [0m[0mFormatting 3 Scala sources...[0m
-[0m[[0m[0mdebug[0m] [0m[0mAdding repositories [https://repo1.maven.org/maven2/,file:////home/marco/.sbt/preloaded/][0m

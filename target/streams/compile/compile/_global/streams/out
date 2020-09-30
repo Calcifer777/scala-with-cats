@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/home/marco/git/marco/scala-with-cats/src/main/scala/chapter01/CatMain.scala:8:5: value show is not a member of chapter01.Cat[0m
-[0m[[0m[31merror[0m] [0m[0m  c.show[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
