@@ -1,0 +1,203 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "myproject",
+        "directory": "/home/marco/git/marco/scala-with-cats",
+        "workspaceDir": "/home/marco/git/marco/scala-with-cats",
+        "sources": [
+            "/home/marco/git/marco/scala-with-cats/src/main/scala-2.12",
+            "/home/marco/git/marco/scala-with-cats/src/main/scala",
+            "/home/marco/git/marco/scala-with-cats/src/main/java",
+            "/home/marco/git/marco/scala-with-cats/target/scala-2.12/src_managed/main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.9/scala-library-2.12.9.jar",
+            "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.12/2.0.0/cats-core_2.12-2.0.0.jar",
+            "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/2.0.0/cats-macros_2.12-2.0.0.jar",
+            "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/2.0.0/cats-kernel_2.12-2.0.0.jar"
+        ],
+        "out": "/home/marco/git/marco/scala-with-cats/.bloop/myproject",
+        "classesDir": "/home/marco/git/marco/scala-with-cats/.bloop/myproject/scala-2.12/classes",
+        "resources": [
+            "/home/marco/git/marco/scala-with-cats/src/main/resources",
+            "/home/marco/git/marco/scala-with-cats/target/scala-2.12/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.9",
+            "options": [
+                "-Xfatal-warnings",
+                "-Ypartial-unification"
+            ],
+            "jars": [
+                "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.9/scala-compiler-2.12.9.jar",
+                "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.9/scala-library-2.12.9.jar",
+                "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.9/scala-reflect-2.12.9.jar",
+                "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar",
+                "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.jar",
+                "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12.jar"
+            ],
+            "analysis": "/home/marco/git/marco/scala-with-cats/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/home/marco/.sdkman/candidates/java/8.0.252.hs-adpt/jre",
+                "options": [
+                    "-Duser.dir=/home/marco/git/marco/scala-with-cats"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.9",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.9/scala-library-2.12.9.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.9/scala-library-2.12.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-core_2.12",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-core_2.12",
+                            "path": "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.12/2.0.0/cats-core_2.12-2.0.0.jar"
+                        },
+                        {
+                            "name": "cats-core_2.12",
+                            "classifier": "sources",
+                            "path": "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.12/2.0.0/cats-core_2.12-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-macros_2.12",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-macros_2.12",
+                            "path": "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/2.0.0/cats-macros_2.12-2.0.0.jar"
+                        },
+                        {
+                            "name": "cats-macros_2.12",
+                            "classifier": "sources",
+                            "path": "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/2.0.0/cats-macros_2.12-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-kernel_2.12",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-kernel_2.12",
+                            "path": "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/2.0.0/cats-kernel_2.12-2.0.0.jar"
+                        },
+                        {
+                            "name": "cats-kernel_2.12",
+                            "classifier": "sources",
+                            "path": "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/2.0.0/cats-kernel_2.12-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.9",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.9/scala-library-2.12.9.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/marco/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.9/scala-library-2.12.9-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

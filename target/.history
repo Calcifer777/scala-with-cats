@@ -1,0 +1,27 @@
+reload
+docs/mdoc
+reload
+docs/mdoc
+docs/mdoc --watch
+reload
+hello
+reload
+compile
+run
+reload
+scalafmt
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+console
+compile
+run
+console
+compile
+run
+exit
