@@ -12,9 +12,9 @@ object JsonMain extends App {
   println(jsonPerson)
 
   // implicitly yields the implicit value
-  def personToJson(p: Person): Json = 
+  def personToJson(p: Person): Json =
     implicitly[JsonWriter[Person]].write(p)
 
   println(personToJson(p))
-  
+
 }

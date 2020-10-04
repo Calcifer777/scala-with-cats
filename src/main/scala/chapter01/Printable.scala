@@ -1,22 +1,22 @@
 package chapter01
 
 trait Printable[A] {
-  def format(value: A): String 
+  def format(value: A): String
 }
 
 object Printable {
 
-  implicit val stringPrintable: Printable[String] = 
+  implicit val stringPrintable: Printable[String] =
     new Printable[String] {
       def format(s: String): String = s
     }
 
-  implicit val intPrintable: Printable[Int] = 
+  implicit val intPrintable: Printable[Int] =
     new Printable[Int] {
       def format(i: Int): String = i.toString()
     }
 
-  implicit val catPrintable: Printable[Cat] = 
+  implicit val catPrintable: Printable[Cat] =
     new Printable[Cat] {
       def format(c: Cat): String = f"${c.name} is a ${c.age} year-old ${c.color} cat."
     }

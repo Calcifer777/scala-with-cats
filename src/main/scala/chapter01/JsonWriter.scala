@@ -20,7 +20,6 @@ object JsonWriter {
     }
   }
 
-
   implicit val personWriter: JsonWriter[Person] = {
     new JsonWriter[Person] {
       def write(value: Person): Json =
@@ -34,11 +33,11 @@ object JsonWriter {
   }
 
   // implicits can be chained
-  implicit def optionWriter[A](implicit writer: JsonWriter[A]): JsonWriter[Option[A]] = 
+  implicit def optionWriter[A](implicit writer: JsonWriter[A]): JsonWriter[Option[A]] =
     new JsonWriter[Option[A]] {
       def write(o: Option[A]): Json = o match {
         case Some(value) => writer.write(value)
-        case None => JsNull
+        case None        => JsNull
       }
     }
 }
