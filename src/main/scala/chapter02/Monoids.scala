@@ -1,3 +1,5 @@
+package chapter02
+
 trait Semigroup[A] {
   def combine(x: A, y: A): A
 }
@@ -44,7 +46,7 @@ object Monoid {
   implicit def setUnionMonoid[A]: Monoid[Set[A]] =
     new Monoid[Set[A]] {
       def combine(x: Set[A], y: Set[A]): Set[A] = x union y
-      def empty: Set[A]                           = Set[A]()
+      def empty: Set[A]                         = Set[A]()
     }
 
 }
