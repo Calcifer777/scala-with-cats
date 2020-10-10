@@ -37,11 +37,11 @@ object WriterMain extends App {
   def factorialW(n: Int): Logged[Int] =
     for {
       ans <- if (n == 0) 1.pure[Logged]
-             else {
-               slowly {
-                 factorialW(n - 1).map(_ * n)
-               }
-             }
+      else {
+        slowly {
+          factorialW(n - 1).map(_ * n)
+        }
+      }
       _ <- Vector(f"fact ${n} ${ans}").tell
     } yield ans
 

@@ -15,15 +15,22 @@ object ReaderMain extends App {
   def findUsername(userId: Int): DbReader[Option[String]] =
     Reader(db => db.usernames.get(userId))
 
-  def checkPassword(username: String, password: String): DbReader[Boolean] =
+  def checkPassword(
+      username: String,
+      password: String
+  ): DbReader[Boolean] =
     Reader(db => db.passwords.get(username).contains(password))
 
-  def checkLogin(userId: Int, password: String): DbReader[Boolean] = {
+  def checkLogin(
+      userId: Int,
+      password: String
+  ): DbReader[Boolean] =
     for {
-      username  <- findUsername(userId)
-      validPass <- username.map(username => checkPassword(username, password)).getOrElse(false.pure[DbReader])
+      username <- findUsername(userId)
+      validPass <- username
+        .map(username => checkPassword(username, password))
+        .getOrElse(false.pure[DbReader])
     } yield validPass
-  }
 
   val users = Map(
     1 -> "dade",
@@ -32,8 +39,8 @@ object ReaderMain extends App {
   )
 
   val passwords = Map(
-    "dade" -> "zerocool",
-    "kate" -> "acirdburn",
+    "dade"  -> "zerocool",
+    "kate"  -> "acirdburn",
     "margo" -> "secret"
   )
 

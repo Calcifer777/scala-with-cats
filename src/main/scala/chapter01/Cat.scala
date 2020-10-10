@@ -11,7 +11,8 @@ object Cat {
 
   implicit class PrintableCatOps[Cat](c: Cat) {
     def format(implicit p: Printable[Cat]): String = p.format(c)
-    def print(implicit p: Printable[Cat]): Unit    = println(format(p))
+    def print(implicit p: Printable[Cat]): Unit =
+      println(format(p))
   }
 
   implicit val catShow: Show[Cat] =

@@ -26,7 +26,9 @@ object Tree {
     }
 
   implicit class TreeFunctorOps[A, Tree[_]](t: Tree[A]) {
-    def map[B](f: A => B)(implicit functor: Functor[Tree]): Tree[B] =
+    def map[B](
+        f: A => B
+    )(implicit functor: Functor[Tree]): Tree[B] =
       functor.map(t)(f)
   }
 }
@@ -38,5 +40,7 @@ object TreeMain extends App {
   println(t)
   val t1 = treeFunctor.map(t)((x: Int) => x + x)
   println(f"After map (x + x) ${t1}")
-  println(f"After map (x * x) with syntax ${t.map((x: Int) => x * x)}")
+  println(
+    f"After map (x * x) with syntax ${t.map((x: Int) => x * x)}"
+  )
 }

@@ -6,8 +6,9 @@ trait Codec[A] {
   def decode(s: String): A
   def imap[B](dec: A => B)(enc: B => A): Codec[B] =
     new Codec[B] {
-      def encode(value: B): String = (enc andThen self.encode)(value)
-      def decode(s: String): B     = dec(self.decode(s))
+      def encode(value: B): String =
+        (enc andThen self.encode)(value)
+      def decode(s: String): B = dec(self.decode(s))
     }
 }
 

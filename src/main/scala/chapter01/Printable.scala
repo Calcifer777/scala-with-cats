@@ -18,10 +18,13 @@ object Printable {
 
   implicit val catPrintable: Printable[Cat] =
     new Printable[Cat] {
-      def format(c: Cat): String = f"${c.name} is a ${c.age} year-old ${c.color} cat."
+      def format(c: Cat): String =
+        f"${c.name} is a ${c.age} year-old ${c.color} cat."
     }
 
-  def format[A](a: A)(implicit p: Printable[A]): String = p.format(a)
+  def format[A](a: A)(implicit p: Printable[A]): String =
+    p.format(a)
 
-  def print[A](a: A)(implicit p: Printable[A]): Unit = println(format(a))
+  def print[A](a: A)(implicit p: Printable[A]): Unit =
+    println(format(a))
 }
